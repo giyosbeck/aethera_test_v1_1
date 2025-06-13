@@ -93,19 +93,26 @@ def chat():
 def feedback():
     data = request.json
     approve = data.get("approve", False)
-    if approve and last_pair:
-        # Save to approved data
-        if not os.path.exists(APPROVED_FILE):
-            approved_data = []
-        else:
-            with open(APPROVED_FILE, encoding="utf-8") as f:
-                approved_data = json.load(f)
+    global last_pair
 
-        approved_data.append(last_pair)
-        with open(APPROVED_FILE, "w", encoding="utf-8") as f:
-            json.dump(approved_data, f, ensure_ascii=False, indent=2)
+    if not last_pair:
+        return jsonify({"status": "no active pair"}), 400
+
+    file_path = "data/approved_pairs.json" if approve else "data/rejected_pairs.json"
+
+    if not os.path.exists(file_path):
+        feedback_data = []
+    else:
+        with open(file_path, encoding="utf-8") as f:
+            feedback_data = json.load(f)
+
+    feedback_data.append(last_pair)
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(feedback_data, f, ensure_ascii=False, indent=2)
 
     return jsonify({"status": "received", "approved": approve})
+
 
 @app.route("/history", methods=["GET"])
 def history():
