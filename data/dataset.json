@@ -1,0 +1,252 @@
+[
+  {
+    "input": "Salom",
+    "response": "Salom, nima gap?",
+    "lang": "uz"
+  },
+  {
+    "input": "Nima yangiliklar?",
+    "response": "Hamma narsa joyida.",
+    "lang": "uz"
+  },
+  {
+    "input": "Bugun nima qilyapsan?",
+    "response": "Kitob o'qiyapman.",
+    "lang": "uz"
+  },
+  {
+    "input": "Qayerdasan?",
+    "response": "Uyda, senchi?",
+    "lang": "uz"
+  },
+  {
+    "input": "Qanday ketyapsiz?",
+    "response": "Yaxshi, rahmat.",
+    "lang": "uz"
+  },
+  {
+    "input": "Kino ko'rdingizmi?",
+    "response": "Ha, kecha bir film ko'rdim.",
+    "lang": "uz"
+  },
+  {
+    "input": "Nima yeymiz?",
+    "response": "Pitsa olsak bo'ladi.",
+    "lang": "uz"
+  },
+  {
+    "input": "Ish qalay?",
+    "response": "Zo'r, lekin bandman.",
+    "lang": "uz"
+  },
+  {
+    "input": "Qachon uchrashamiz?",
+    "response": "Ertaga soat beshda.",
+    "lang": "uz"
+  },
+  {
+    "input": "Bu nima?",
+    "response": "Bu mening yangi telefonim.",
+    "lang": "uz"
+  },
+  {
+    "input": "Havo qanday?",
+    "response": "Bugun issiq.",
+    "lang": "uz"
+  },
+  {
+    "input": "Sen qayerliksan?",
+    "response": "Toshkentdanman.",
+    "lang": "uz"
+  },
+  {
+    "input": "Kitob o'qiysanmi?",
+    "response": "Ha, sevaman.",
+    "lang": "uz"
+  },
+  {
+    "input": "Qahva ichamizmi?",
+    "response": "Albatta, qani ketdik!",
+    "lang": "uz"
+  },
+  {
+    "input": "Bugun dam olasanmi?",
+    "response": "Yo'q, ish bor.",
+    "lang": "uz"
+  },
+  {
+    "input": "Privet",
+    "response": "Zdravstvuy! Kak dela?",
+    "lang": "ru"
+  },
+  {
+    "input": "Kak dela?",
+    "response": "Khorosho, spasibo.",
+    "lang": "ru"
+  },
+  {
+    "input": "Chto novogo?",
+    "response": "Vse po-staromu.",
+    "lang": "ru"
+  },
+  {
+    "input": "Gde ty?",
+    "response": "Doma, a ty?",
+    "lang": "ru"
+  },
+  {
+    "input": "Kak pogoda?",
+    "response": "Segodnya solnechno.",
+    "lang": "ru"
+  },
+  {
+    "input": "Chto delaesh?",
+    "response": "Chitayu knigu.",
+    "lang": "ru"
+  },
+  {
+    "input": "Poydem v kino?",
+    "response": "Da, khoroshaya ideya!",
+    "lang": "ru"
+  },
+  {
+    "input": "Chto na uzhin?",
+    "response": "Mozhet, zakazhem piccu?",
+    "lang": "ru"
+  },
+  {
+    "input": "Kogda vstretimsya?",
+    "response": "Zavtra v pyat' vechera.",
+    "lang": "ru"
+  },
+  {
+    "input": "Ty lyubish sport?",
+    "response": "Da, begayu po utram.",
+    "lang": "ru"
+  },
+  {
+    "input": "Kak rabota?",
+    "response": "Normal'no, no mnogo del.",
+    "lang": "ru"
+  },
+  {
+    "input": "Chto eto?",
+    "response": "Eto moy novyy telefon.",
+    "lang": "ru"
+  },
+  {
+    "input": "Ty otkuda?",
+    "response": "Iz Moskvy.",
+    "lang": "ru"
+  },
+  {
+    "input": "Lyubish chitat'?",
+    "response": "Da, osobenno fantastiku.",
+    "lang": "ru"
+  },
+  {
+    "input": "Kofe ili chay?",
+    "response": "Kofe, pozhaluysta.",
+    "lang": "ru"
+  },
+  {
+    "input": "Hello",
+    "response": "Hi there!",
+    "lang": "en"
+  },
+  {
+    "input": "How are you?",
+    "response": "I'm fine, thank you.",
+    "lang": "en"
+  },
+  {
+    "input": "What's up?",
+    "response": "Not much, just chilling.",
+    "lang": "en"
+  },
+  {
+    "input": "Where are you?",
+    "response": "At home, you?",
+    "lang": "en"
+  },
+  {
+    "input": "How's the weather?",
+    "response": "It's sunny today.",
+    "lang": "en"
+  },
+  {
+    "input": "What are you doing?",
+    "response": "Reading a book.",
+    "lang": "en"
+  },
+  {
+    "input": "Wanna grab coffee?",
+    "response": "Sure, let's do it!",
+    "lang": "en"
+  },
+  {
+    "input": "What's for dinner?",
+    "response": "How about pizza?",
+    "lang": "en"
+  },
+  {
+    "input": "When do we meet?",
+    "response": "Tomorrow at 5 PM.",
+    "lang": "en"
+  },
+  {
+    "input": "Do you like sports?",
+    "response": "Yeah, I jog every morning.",
+    "lang": "en"
+  },
+  {
+    "input": "How's work?",
+    "response": "Good, but busy.",
+    "lang": "en"
+  },
+  {
+    "input": "What's that?",
+    "response": "It's my new phone.",
+    "lang": "en"
+  },
+  {
+    "input": "Where are you from?",
+    "response": "I'm from New York.",
+    "lang": "en"
+  },
+  {
+    "input": "Do you read books?",
+    "response": "Yes, I love reading.",
+    "lang": "en"
+  },
+  {
+    "input": "Coffee or tea?",
+    "response": "Coffee, please.",
+    "lang": "en"
+  },
+  {
+    "input": "Got any plans?",
+    "response": "Not yet, any ideas?",
+    "lang": "en"
+  },
+  {
+    "input": "Xayrli tong!",
+    "response": "Tong yaxshi, nima yangi?",
+    "lang": "uz"
+  },
+  {
+    "input": "Kutubxonaga borasanmi?",
+    "response": "Ha, keyinroq boraman.",
+    "lang": "uz"
+  },
+  {
+    "input": "Poyezd soat nechada?",
+    "response": "Soat yettida.",
+    "lang": "uz"
+  },
+  {
+    "input": "Chto na zavtrak?",
+    "response": "Ovsyanka, a u tebya?",
+    "lang": "ru"
+  }
+]
