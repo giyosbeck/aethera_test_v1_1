@@ -1,31 +1,52 @@
-<!-- 🧑‍💻 Step 6: Simple Frontend to Talk to Your AI -->
+<!-- 🌐 Step 10: Updated Frontend With Feedback Buttons -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Chat with Your AI</title>
   <style>
-    body { font-family: sans-serif; max-width: 500px; margin: auto; padding-top: 2rem; }
-    input, button { font-size: 1.2rem; padding: 0.5rem; width: 100%; margin-top: 1rem; }
+    body { font-family: sans-serif; max-width: 600px; margin: auto; padding-top: 2rem; }
+    input, button { font-size: 1.1rem; padding: 0.5rem; margin-top: 1rem; }
     #response { margin-top: 2rem; background: #f5f5f5; padding: 1rem; border-radius: 8px; }
+    .feedback { margin-top: 1rem; display: none; }
   </style>
 </head>
 <body>
-  <h1>👨‍🤖 Talk to Your AI</h1>
-  <input id="msg" type="text" placeholder="Type a message...">
+  <h1>💬 Talk to Your AI</h1>
+  <input id="msg" type="text" placeholder="Type a message..." style="width: 80%">
   <button onclick="sendMessage()">Send</button>
+
   <div id="response"></div>
+  <div class="feedback">
+    <button onclick="sendFeedback(true)">👍 Good</button>
+    <button onclick="sendFeedback(false)">👎 Bad</button>
+  </div>
 
   <script>
+    let feedbackPending = false;
+
     async function sendMessage() {
-      const message = document.getElementById('msg').value;
+      const msg = document.getElementById('msg').value;
       const res = await fetch('/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message })
+        body: JSON.stringify({ message: msg })
       });
       const data = await res.json();
       document.getElementById('response').innerText = `AI: ${data.response}`;
+      document.querySelector('.feedback').style.display = data.feedback_required ? 'block' : 'none';
+      feedbackPending = true;
+    }
+
+    async function sendFeedback(approve) {
+      if (!feedbackPending) return;
+      await fetch('/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ approve })
+      });
+      document.querySelector('.feedback').style.display = 'none';
+      feedbackPending = false;
     }
   </script>
 </body>
